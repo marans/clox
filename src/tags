@@ -1,0 +1,163 @@
+ALLOCATE	memory.h	/^#define ALLOCATE(type, count) \\$/
+ALLOCATE_OBJ	object.c	/^#define ALLOCATE_OBJ(type, objectType) \\$/
+AS_BOOL	value.h	/^#define AS_BOOL(value)    ((value).as.boolean)$/
+AS_CSTRING	object.h	/^#define AS_CSTRING(value)      (((ObjString*)AS_OB/
+AS_NUMBER	value.h	/^#define AS_NUMBER(value)  ((value).as.number)$/
+AS_OBJ	value.h	/^#define AS_OBJ(value)     ((value).as.obj)$/
+AS_STRING	object.h	/^#define AS_STRING(value)       ((ObjString*)AS_OBJ/
+BINARY_OP	vm.c	/^#define BINARY_OP(valueType, op) \\$/
+BOOL_VAL	value.h	/^#define BOOL_VAL(value)   ((Value){VAL_BOOL, {.boo/
+Chunk	chunk.h	/^} Chunk;$/
+Compiler	compiler.c	/^} Compiler;$/
+Entry	table.h	/^} Entry;$/
+FREE	memory.h	/^#define FREE(type, pointer) reallocate(pointer, si/
+FREE_ARRAY	memory.h	/^#define FREE_ARRAY(type, pointer, oldCount) \\$/
+GROW_ARRAY	memory.h	/^#define GROW_ARRAY(type, pointer, oldCount, newCou/
+GROW_CAPACITY	memory.h	/^#define GROW_CAPACITY(capacity) \\$/
+IS_BOOL	value.h	/^#define IS_BOOL(value)    ((value).type == VAL_BOO/
+IS_NIL	value.h	/^#define IS_NIL(value)     ((value).type == VAL_NIL/
+IS_NUMBER	value.h	/^#define IS_NUMBER(value)  ((value).type == VAL_NUM/
+IS_OBJ	value.h	/^#define IS_OBJ(value)     ((value).type == VAL_OBJ/
+IS_STRING	object.h	/^#define IS_STRING(value)       isObjType(value, OB/
+InterpretResult	vm.h	/^} InterpretResult;$/
+Local	compiler.c	/^} Local;$/
+Mmain	main.c	/^int main(int argc, const char* argv[]) {$/
+NUMBER_VAL	value.h	/^#define NUMBER_VAL(value) ((Value){VAL_NUMBER, {.n/
+OBJ_TYPE	object.h	/^#define OBJ_TYPE(value)        (AS_OBJ(value)->typ/
+OBJ_VAL	value.h	/^#define OBJ_VAL(object)   ((Value){VAL_OBJ, {.obj /
+Obj	value.h	/^typedef struct sObj Obj;$/
+ObjFunction	object.h	/^} ObjFunction;$/
+ObjString	value.h	/^typedef struct sObjString ObjString;$/
+ObjType	object.h	/^} ObjType;$/
+OpCode	chunk.h	/^} OpCode;$/
+ParseRule	compiler.c	/^} ParseRule;$/
+Parser	compiler.c	/^} Parser;$/
+Precedence	compiler.c	/^} Precedence;$/
+READ_BYTE	vm.c	/^#define READ_BYTE() (*vm.ip++)$/
+READ_CONSTANT	vm.c	/^#define READ_CONSTANT() (vm.chunk->constants.value/
+READ_SHORT	vm.c	/^#define READ_SHORT() \\$/
+READ_STRING	vm.c	/^#define READ_STRING() AS_STRING(READ_CONSTANT())$/
+Scanner	scanner.c	/^} Scanner;$/
+Table	table.h	/^} Table;$/
+Token	scanner.h	/^} Token;$/
+TokenType	scanner.h	/^} TokenType;$/
+VM	vm.h	/^} VM;$/
+Value	value.h	/^} Value;$/
+ValueArray	value.h	/^} ValueArray;$/
+ValueType	value.h	/^} ValueType;$/
+addConstant	chunk.c	/^int addConstant(Chunk* chunk, Value value) {$/
+addLocal	compiler.c	/^static void addLocal(Token name) {$/
+adjustCapacity	table.c	/^static void adjustCapacity(Table* table, int capac/
+advance	compiler.c	/^static void advance() {$/
+allocateObject	object.c	/^static Obj* allocateObject(size_t size, ObjType ty/
+allocateString	object.c	/^static ObjString* allocateString(char* chars, int /
+and_	compiler.c	/^static void and_(bool canAssign) {$/
+beginScope	compiler.c	/^static void beginScope() {$/
+binary	compiler.c	/^static void binary(bool canAssign) {$/
+block	compiler.c	/^static void block() {$/
+byteInstruction	debug.c	/^static int byteInstruction(const char* name, Chunk/
+canAssign	compiler.c	/^typedef void (*ParseFn)(bool canAssign);$/
+check	compiler.c	/^static bool check(TokenType type) {$/
+checkKeyword	scanner.c	/^static TokenType checkKeyword(int start, int lengt/
+compile	compiler.c	/^bool compile(const char* source, Chunk* chunk) {$/
+concatenate	vm.c	/^static void concatenate() {$/
+constantInstruction	debug.c	/^static int constantInstruction(const char* name, C/
+consume	compiler.c	/^static void consume(TokenType type, const char* me/
+copyString	object.c	/^ObjString* copyString(const char* chars, int lengt/
+currentChunk	compiler.c	/^static Chunk* currentChunk() {$/
+declaration	compiler.c	/^static void declaration() {$/
+declareVariable	compiler.c	/^static void declareVariable() {$/
+defineVariable	compiler.c	/^static void defineVariable(uint8_t global) {$/
+disassembleChunk	debug.c	/^void disassembleChunk(Chunk* chunk, const char* na/
+disassembleInstruction	debug.c	/^int disassembleInstruction(Chunk* chunk, int offse/
+emitByte	compiler.c	/^static void emitByte(uint8_t byte) {$/
+emitBytes	compiler.c	/^static void emitBytes(uint8_t byte1, uint8_t byte2/
+emitConstant	compiler.c	/^static void emitConstant(Value value) {$/
+emitJump	compiler.c	/^static int emitJump(uint8_t instruction) {$/
+emitLoop	compiler.c	/^static void emitLoop(int loopStart) {$/
+emitReturn	compiler.c	/^static void emitReturn() {$/
+endCompiler	compiler.c	/^static void endCompiler() {$/
+endScope	compiler.c	/^static void endScope() {$/
+error	compiler.c	/^static void error(const char* message) {$/
+errorAt	compiler.c	/^static void errorAt(Token* token, const char* mess/
+errorAtCurrent	compiler.c	/^static void errorAtCurrent(const char* message) {$/
+errorToken	scanner.c	/^static Token errorToken(const char* message) {$/
+expression	compiler.c	/^static void expression() {$/
+expressionStatement	compiler.c	/^static void expressionStatement() {$/
+findEntry	table.c	/^static Entry* findEntry(Entry* entries, int capaci/
+forStatement	compiler.c	/^static void forStatement() {$/
+freeChunk	chunk.c	/^void freeChunk(Chunk* chunk) {$/
+freeObject	memory.c	/^static void freeObject(Obj* object) {$/
+freeObjects	memory.c	/^void freeObjects() {$/
+freeTable	table.c	/^void freeTable(Table* table) {$/
+freeVM	vm.c	/^void freeVM() {$/
+freeValueArray	value.c	/^void freeValueArray(ValueArray* array) {$/
+getRule	compiler.c	/^static ParseRule* getRule(TokenType type) {$/
+grouping	compiler.c	/^static void grouping(bool canAssign) {$/
+hashString	object.c	/^static uint32_t hashString(const char* key, int le/
+identifier	scanner.c	/^static Token identifier() {$/
+identifierConstant	compiler.c	/^static uint8_t identifierConstant(Token* name) {$/
+identifierType	scanner.c	/^static TokenType identifierType()$/
+identifiersEqual	compiler.c	/^static bool identifiersEqual(Token* a, Token* b) {/
+ifStatement	compiler.c	/^static void ifStatement() {$/
+initChunk	chunk.c	/^void initChunk(Chunk* chunk) {$/
+initCompiler	compiler.c	/^static void initCompiler(Compiler* compiler) {$/
+initScanner	scanner.c	/^void initScanner(const char* source) {$/
+initTable	table.c	/^void initTable(Table* table) {$/
+initVM	vm.c	/^void initVM() {$/
+initValueArray	value.c	/^void initValueArray(ValueArray* array) {$/
+interpret	vm.c	/^InterpretResult interpret(const char* source) {$/
+isAlpha	scanner.c	/^static bool isAlpha(char c) {$/
+isAtEnd	scanner.c	/^static bool isAtEnd() {$/
+isDigit	scanner.c	/^static bool isDigit(char c) {$/
+isFalsey	vm.c	/^static bool isFalsey(Value value) {$/
+isObjType	object.h	/^static inline bool isObjType(Value value, ObjType /
+jumpInstruction	debug.c	/^static int jumpInstruction(const char* name, int s/
+literal	compiler.c	/^static void literal(bool canAssign) {$/
+makeConstant	compiler.c	/^static uint8_t makeConstant(Value value) {$/
+makeToken	scanner.c	/^static Token makeToken(TokenType type) {$/
+markInitialized	compiler.c	/^static void markInitialized() {$/
+match	compiler.c	/^static bool match(TokenType type) {$/
+namedVariable	compiler.c	/^static void namedVariable(Token name, bool canAssi/
+newFunction	object.c	/^ObjFunction* newFunction() {$/
+number	compiler.c	/^static void number(bool canAssign) {$/
+or_	compiler.c	/^static void or_(bool canAssign) {$/
+parsePrecedence	compiler.c	/^static void parsePrecedence(Precedence precedence)/
+parseVariable	compiler.c	/^static uint8_t parseVariable(const char* errorMess/
+patchJump	compiler.c	/^static void patchJump(int offset) {$/
+peek	scanner.c	/^static char peek() {$/
+peekNext	scanner.c	/^static char peekNext() {$/
+pop	vm.c	/^Value pop() {$/
+printObject	object.c	/^void printObject(Value value) {$/
+printStatement	compiler.c	/^static void printStatement() {$/
+printValue	value.c	/^void printValue(Value value) {$/
+push	vm.c	/^void push(Value value) {$/
+readFile	main.c	/^static char* readFile(const char* path) {$/
+reallocate	memory.c	/^void* reallocate(void* pointer, size_t oldSize, si/
+repl	main.c	/^static void repl() {$/
+resetStack	vm.c	/^static void resetStack() {$/
+resolveLocal	compiler.c	/^static int resolveLocal(Compiler* compiler, Token*/
+run	vm.c	/^static InterpretResult run() {$/
+runFile	main.c	/^static void runFile(const char* path) {$/
+runtimeError	vm.c	/^static void runtimeError(const char* format, ...) /
+sObj	object.h	/^struct sObj {$/
+sObjString	object.h	/^struct sObjString {$/
+scanToken	scanner.c	/^Token scanToken() {$/
+simpleInstruction	debug.c	/^static int simpleInstruction(const char* name, int/
+skipWhitespace	scanner.c	/^static void skipWhitespace() {$/
+statement	compiler.c	/^static void statement() {$/
+string	compiler.c	/^static void string(bool canAssign) {$/
+synchronize	compiler.c	/^static void synchronize() {$/
+tableAddAll	table.c	/^void tableAddAll(Table* from, Table* to) {$/
+tableDelete	table.c	/^bool tableDelete(Table* table, ObjString* key) {$/
+tableFindString	table.c	/^ObjString* tableFindString(Table* table, const cha/
+tableGet	table.c	/^bool tableGet(Table* table, ObjString* key, Value*/
+tableSet	table.c	/^bool tableSet(Table* table, ObjString* key, Value /
+takeString	object.c	/^ObjString* takeString(char* chars, int length) {$/
+unary	compiler.c	/^static void unary(bool canAssign) {$/
+valuesEqual	value.c	/^bool valuesEqual(Value a, Value b) {$/
+varDeclaration	compiler.c	/^static void varDeclaration() {$/
+variable	compiler.c	/^static void variable(bool canAssign) {$/
+whileStatement	compiler.c	/^static void whileStatement() {$/
+writeChunk	chunk.c	/^void writeChunk(Chunk* chunk, uint8_t byte, int li/
+writeValueArray	value.c	/^void writeValueArray(ValueArray* array, Value valu/

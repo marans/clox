@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/chunk.c.o -c /Users/maran/clox/src/chunk.c",
+  "file": "/Users/maran/clox/src/chunk.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/compiler.c.o -c /Users/maran/clox/src/compiler.c",
+  "file": "/Users/maran/clox/src/compiler.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/debug.c.o -c /Users/maran/clox/src/debug.c",
+  "file": "/Users/maran/clox/src/debug.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/memory.c.o -c /Users/maran/clox/src/memory.c",
+  "file": "/Users/maran/clox/src/memory.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/object.c.o -c /Users/maran/clox/src/object.c",
+  "file": "/Users/maran/clox/src/object.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/scanner.c.o -c /Users/maran/clox/src/scanner.c",
+  "file": "/Users/maran/clox/src/scanner.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/table.c.o -c /Users/maran/clox/src/table.c",
+  "file": "/Users/maran/clox/src/table.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/value.c.o -c /Users/maran/clox/src/value.c",
+  "file": "/Users/maran/clox/src/value.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/vm.c.o -c /Users/maran/clox/src/vm.c",
+  "file": "/Users/maran/clox/src/vm.c"
+},
+{
+  "directory": "/Users/maran/clox",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc    -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/clox.dir/src/main.c.o -c /Users/maran/clox/src/main.c",
+  "file": "/Users/maran/clox/src/main.c"
+}
+]

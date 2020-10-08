@@ -1,0 +1,3 @@
+/Users/maran/clox/CMakeFiles/rebuild_cache.dir
+/Users/maran/clox/CMakeFiles/edit_cache.dir
+/Users/maran/clox/CMakeFiles/clox.dir
