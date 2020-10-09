@@ -7,13 +7,16 @@ CMakeFiles/clox.dir/src/chunk.c.o
  /Users/maran/clox/src/common.h
  /Users/maran/clox/src/memory.h
  /Users/maran/clox/src/object.h
+ /Users/maran/clox/src/table.h
  /Users/maran/clox/src/value.h
+ /Users/maran/clox/src/vm.h
 CMakeFiles/clox.dir/src/compiler.c.o
  /Users/maran/clox/src/chunk.h
  /Users/maran/clox/src/common.h
  /Users/maran/clox/src/compiler.c
  /Users/maran/clox/src/compiler.h
  /Users/maran/clox/src/debug.h
+ /Users/maran/clox/src/memory.h
  /Users/maran/clox/src/object.h
  /Users/maran/clox/src/scanner.h
  /Users/maran/clox/src/table.h
@@ -24,6 +27,7 @@ CMakeFiles/clox.dir/src/debug.c.o
  /Users/maran/clox/src/common.h
  /Users/maran/clox/src/debug.c
  /Users/maran/clox/src/debug.h
+ /Users/maran/clox/src/object.h
  /Users/maran/clox/src/value.h
 CMakeFiles/clox.dir/src/main.c.o
  /Users/maran/clox/src/chunk.h
@@ -37,6 +41,8 @@ CMakeFiles/clox.dir/src/main.c.o
 CMakeFiles/clox.dir/src/memory.c.o
  /Users/maran/clox/src/chunk.h
  /Users/maran/clox/src/common.h
+ /Users/maran/clox/src/compiler.h
+ /Users/maran/clox/src/debug.h
  /Users/maran/clox/src/memory.c
  /Users/maran/clox/src/memory.h
  /Users/maran/clox/src/object.h

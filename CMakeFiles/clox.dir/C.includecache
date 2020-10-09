@@ -13,6 +13,8 @@ chunk.h
 /Users/maran/clox/src/chunk.h
 memory.h
 /Users/maran/clox/src/memory.h
+vm.h
+/Users/maran/clox/src/vm.h
 
 /Users/maran/clox/src/chunk.h
 common.h
@@ -39,6 +41,8 @@ common.h
 /Users/maran/clox/src/common.h
 compiler.h
 /Users/maran/clox/src/compiler.h
+memory.h
+/Users/maran/clox/src/memory.h
 scanner.h
 /Users/maran/clox/src/scanner.h
 debug.h
@@ -75,10 +79,16 @@ vm.h
 /Users/maran/clox/src/memory.c
 stdlib.h
 -
+compiler.h
+/Users/maran/clox/src/compiler.h
 memory.h
 /Users/maran/clox/src/memory.h
 vm.h
 /Users/maran/clox/src/vm.h
+stdio.h
+-
+debug.h
+/Users/maran/clox/src/debug.h
 
 /Users/maran/clox/src/memory.h
 common.h
@@ -112,35 +122,9 @@ value.h
 
 /Users/maran/clox/src/scanner.h
 
-/Users/maran/clox/src/table.c
-stdlib.h
--
-string.h
--
-memory.h
-/Users/maran/clox/src/memory.h
-object.h
-/Users/maran/clox/src/object.h
-table.h
-/Users/maran/clox/src/table.h
-value.h
-/Users/maran/clox/src/value.h
-
 /Users/maran/clox/src/table.h
 common.h
 /Users/maran/clox/src/common.h
-value.h
-/Users/maran/clox/src/value.h
-
-/Users/maran/clox/src/value.c
-stdio.h
--
-string.h
--
-object.h
-/Users/maran/clox/src/object.h
-memory.h
-/Users/maran/clox/src/memory.h
 value.h
 /Users/maran/clox/src/value.h
 
